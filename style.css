@@ -1,42 +1,64 @@
-body{
-    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+body {
+  background-color: #e0e0e0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
 }
-#text{
-    /* background-color: #0a0a23; */
-    /* color: #ffffff; */
-    padding: 10px;
+#text {
+    color: #121212;
+  padding: 10px;
 }
-#game{
-    max-width: 550px;
-    max-height: 400px;
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
-    color: #ffffff;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border-radius: 10px;
+#game {
+  max-width: 550px;
+  max-height: 400px;
+  color: #ffffff;
+  padding: 20px;
+  background: #e0e0e0;
+  border-radius: 30px;
+  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+  transition: 0.5s ease;
 }
-#controls ,#stats{
-    border: 1px solid #0a0a23;
-    color: #0a0a23;
-    padding: 5px;
+#game:hover {
+  box-shadow: 2px 2px 30px #bebebe, -2px -2px 30px #ffffff;
 }
-#monsterStats{
-    border: 1px solid #0a0a23;
-    color: #ffffff;
-    padding: 5px;
-    background-color: #c70d0d;
-    display: none;
+#controls,
+#stats {
+  border-bottom: 1px solid #121212;
+  padding: 10px;
+  text-align: center;
 }
-.stat{
-    padding-right: 10px;
+#monsterStats {
+  margin-top: 1em;
+  color: #ffffff;
+  padding: 5px 10px;
+  background-color: #c70d0d;
+  border-radius: 20px;
+  display: none;
 }
-button{
-    cursor: pointer;
-    color: #0a0a23;
-    background-color: #feac32;
-    background-image: linear-gradient(#fecc4c, #ffac33);
-    border: 3px solid #feac32;
+.stat {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 20px;
+  color: #121212;
+}
+button {
+  cursor: pointer;
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border: none;
+  color: #121212;
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+#xpText {
+  color: #2b50c8;
+}
+#healthText {
+  color: #228b22;
+}
+#goldText {
+  color: #e8b923;
 }
